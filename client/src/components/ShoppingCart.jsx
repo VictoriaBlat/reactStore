@@ -127,7 +127,7 @@ class ShoppingCart extends Component {
           <h1>Total</h1>
           <h1>€{total}</h1>
           <p>Free Delivery</p>
-          <Checkout price={total * 100} />
+          <Checkout history={this.props.history} price={total * 100} />
         </div>
       </div>
     );

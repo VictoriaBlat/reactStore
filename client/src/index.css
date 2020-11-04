@@ -60,13 +60,34 @@ body {
     #87b9c4
   );
 }
-
-/* .search-bar-container {
-  display: block;
-} */
-
+.search-bar {
+  border-radius: 5px;
+}
+.search-bar-container {
+  display: flex;
+  align-content: space-between;
+}
+.search-bar-container button {
+  color: white;
+  background-color: grey;
+  font-family: Josefin Sans;
+  font-size: 1.5rem;
+  padding: 3px;
+  /* max-width: 50%; */
+  align-self: center;
+  margin-top: 0px;
+  box-shadow: 10px 10px 14px 1px rgba(00, 00, 00, 0.2);
+}
+.search-for-products input {
+  font-family: Josefin Sans;
+  width: 300px;
+}
 .search-for-products {
   display: flex;
+  align-content: space-between;
+}
+.search-for-products h3 {
+  margin: 10px 10px;
 }
 .products {
   display: flex;

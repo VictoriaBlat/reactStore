@@ -8,6 +8,8 @@ export default class Checkout extends React.Component {
     // server, wait for the response, and update the UI
     // accordingly. How this is done is up to you. Using
     // XHR, fetch, or a GraphQL mutation is typical.
+    //redirect
+    this.props.history.push("/");
   };
 
   render() {

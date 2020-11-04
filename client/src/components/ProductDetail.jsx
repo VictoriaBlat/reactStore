@@ -12,7 +12,7 @@ export default class ProductDetail extends Component {
   componentDidMount() {
     const productId = this.props.match.params.productId;
     console.log(productId);
-    axios.get(`/products/${productId}`).then(response => {
+    axios.get(`/api/products/${productId}`).then(response => {
       console.log("resolved", response.data);
       this.setState({
         product: response.data

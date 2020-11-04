@@ -4,11 +4,11 @@ const router = require("express").Router();
 const usersRoutes = require("./users");
 const productsRoutes = require("./products");
 
-router.get("/", (req, res) => {
-  res.send("This is home");
-});
+// router.get("/", (req, res) => {
+//   res.send("This is home");
+// });
 
 router.use("/api/auth", usersRoutes);
-router.use("/", productsRoutes);
+router.use("/api", productsRoutes);
 
 module.exports = router;
