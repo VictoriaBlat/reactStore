@@ -1,0 +1,395 @@
+.App {
+  text-align: center;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: white;
+}
+body {
+  margin: 0;
+  font-family: Josefin Sans;
+  font-weight: bold;
+}
+
+/* .footer {
+    margin-top: auto;
+  } */
+
+.welcome-section {
+  display: flex;
+  flex-wrap: no-wrap;
+}
+.slogan-section {
+  display: flex;
+  /* flex-grow: 2; */
+  margin: 5px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 50%;
+}
+
+.starter-dog {
+  padding-left: 10px;
+  /* flex-grow: 1; */
+}
+.welcome-section img {
+  /* height: 50%; */
+}
+
+.welcome-section button {
+  color: white;
+  background-color: rgb(135, 185, 196);
+  font-family: Josefin Sans;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  max-width: 50%;
+  align-self: center;
+  margin-top: 20px;
+  box-shadow: 10px 10px 14px 1px rgba(00, 00, 00, 0.2);
+}
+
+.bestsellers {
+  background-image: linear-gradient(
+    to bottom,
+    #ffffff,
+    #e8ebf3,
+    #cbd9e7,
+    #aac9d8,
+    #87b9c4
+  );
+}
+.search-bar {
+  border-radius: 5px;
+}
+.search-bar-container {
+  display: flex;
+  align-content: space-between;
+}
+.search-bar-container button {
+  color: white;
+  background-color: grey;
+  font-family: Josefin Sans;
+  font-size: 1.5rem;
+  padding: 3px;
+  /* max-width: 50%; */
+  align-self: center;
+  margin-top: 0px;
+  box-shadow: 10px 10px 14px 1px rgba(00, 00, 00, 0.2);
+}
+.search-for-products input {
+  font-family: Josefin Sans;
+  width: 300px;
+}
+.search-for-products {
+  display: flex;
+  align-content: space-between;
+}
+.search-for-products h3 {
+  margin: 10px 10px;
+}
+.products {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  padding: 2%;
+  flex-grow: 1;
+  flex-basis: 16%;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-image {
+  max-width: 100%;
+  height: auto;
+}
+.product-info {
+  margin-top: auto;
+  text-decoration: none;
+}
+.product-info button {
+  color: white;
+  background-color: rgb(135, 185, 196);
+  font-family: Josefin Sans;
+  font-size: 1rem;
+  padding: 0.4rem;
+  border-radius: 10px;
+}
+
+.product-image img {
+  max-width: 100%;
+}
+.product-info h5 {
+  margin: 0.5rem;
+}
+
+.product-details-page {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product-gallery {
+  flex-grow: 1;
+  flex-basis: 40%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.product-gallery img {
+  max-width: 100%;
+}
+
+.product-description {
+  flex-grow: 1;
+  flex-basis: 40%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.car-styles {
+  background-color: white !important;
+}
+
+/* navbar styling start-------------------------------->*/
+
+body {
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+a {
+  color: #000;
+}
+
+/* header */
+
+nav {
+  /* margin-bottom: 50px; */
+  height: calc(3em + 20px);
+}
+
+.header {
+  top: 0;
+  background-color: #fff;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  border-right: 1px solid #f4f4f4;
+  text-decoration: none;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  background-color: #f4f4f4;
+}
+
+.header .logo {
+  display: block;
+  float: left;
+  font-size: 3em;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background 0.2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 48em) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+}
+
+/* navbar styling ends-------------------------------->*/
+
+/* footer */
+
+.footerback {
+  background-image: linear-gradient(
+    to bottom,
+    #ffffff,
+    #e8ebf3,
+    #cbd9e7,
+    #aac9d8,
+    #87b9c4
+  );
+  margin-top: auto;
+  padding: 20px;
+}
+.footerback h5 {
+  margin: 5px 5px;
+}
+.footerback h2 {
+  margin: 10px 5px;
+}
+
+.four-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 20px;
+}
+
+.columns-footer .woofer {
+  font-size: 2.5em;
+  text-align: left;
+  padding-left: 15px;
+  margin-top: 20px;
+}
+
+.first-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.second-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.icons-social {
+  display: flex;
+  align-content: space-between;
+}
+.third-column img {
+  height: 30px;
+  margin: 1px;
+}
+.copyr {
+  margin: 0;
+}
+
+/* shoping cart */
+
+.remove-button {
+  color: white;
+  background-color: grey;
+  font-family: Josefin Sans;
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+
+.plusminus {
+  color: white;
+  background-color: grey;
+  font-family: Josefin Sans;
+  font-size: 1rem;
+}
+
+.image-cart {
+  height: 100px;
+}
+
+/* product detail */
+
+.detail-buuton {
+  color: white;
+  background-color: rgb(135, 185, 196);
+  max-width: 50%;
+  font-family: Josefin Sans;
+  font-size: 1rem;
+  padding: 0.5rem;
+  align-self: center;
+}
